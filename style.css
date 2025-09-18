@@ -53,7 +53,7 @@ nav a.resume:hover {
 main {
   flex: 1;
   display: block; /* reset from flex */
-  padding: 2rem;
+  padding: 0;
 }
 
 
@@ -61,16 +61,27 @@ main {
 .intro-band {
   display: flex;
   align-items: center;
-  gap: 5rem;
+  gap: 10rem;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 3rem; /* push space before image rows */
 }
 
+/* White band only behind intro section */
+/* White band behind intro section */
+.intro-wrapper {
+  background-color: #fff;    /* white background */
+  width: 100%;               /* full screen width */
+  padding: 8rem 2rem;        /* space inside band */
+  margin-top: 0;             /* touches the header */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* optional subtle depth */
+}
+
+
 /* Text block centered internally */
 .intro-text {
   flex: 1;
-  max-width: 450px;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   align-items: center; /* centers text + button */
@@ -85,6 +96,7 @@ main {
 .intro-text p {
   margin-bottom: 1.5rem;
   font-size: 1.2rem;
+  max-width: 450px;
 }
 
 /* MY PROJECTS button */
@@ -116,7 +128,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 3rem; /* vertical space between the two rows */
-  margin-top: 10rem; /* move the whole skills section down the page */
+  margin-top: 5rem; /* move the whole skills section down the page */
 }
 
 /* Updated image rows for spacing and captions */
@@ -143,11 +155,13 @@ main {
 }
 
 .image-card p {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #222;
+  font-size: 1.2rem;   /* match intro-text p */
+  font-weight: normal; /* remove bold, match paragraph style */
+  color: #333;         /* same body text color */
   margin: 0;
+  text-align: center;
 }
+
 
 /* Responsive */
 @media (max-width: 768px) {
