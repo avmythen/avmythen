@@ -110,28 +110,44 @@ main {
   border-radius: 1px;
 }
 
-/* Skills visuals wrapper */
+/* Updated image rows for spacing, smaller images, and captions */
 .skills-visuals {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem; /* vertical space between the two rows */
+  margin-top: 10rem; /* move the whole skills section down the page */
 }
 
-/* Rows of images */
+/* Updated image rows for spacing and captions */
 .image-row {
   display: flex;
   justify-content: center;
-  gap: 40px;
-  flex-wrap: nowrap; /* keep them in a row */
+  gap: 300px; /* increased spacing between images */
+  flex-wrap: nowrap;
+  margin-bottom: 2rem;
 }
 
-.image-row img {
-  max-width: 200px;
+.image-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.image-card img {
+  max-width: 100px;
   width: 100%;
   height: auto;
+  margin-bottom: 0.5rem; /* space between image and caption */
 }
 
+.image-card p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222;
+  margin: 0;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -146,7 +162,7 @@ main {
   }
 
   .image-holder img {
-    width: 80%;
+    width: 60%;
     margin-top: 1rem;
   }
 
