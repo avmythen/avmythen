@@ -55,6 +55,10 @@ nav a.resume:hover {
   background-color: #666;
 }
 
+nav a.active {
+  background: #555;
+}
+
 /* Main content */
 main {
   flex: 1;
