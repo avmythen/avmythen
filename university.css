@@ -1,0 +1,153 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #222;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+nav a:hover:not(.resume) {
+  background: #666;
+}
+
+nav a.resume {
+  background: #444;
+}
+
+nav a.resume:hover {
+  background: #666;
+}
+
+nav a.active {
+  background: #555;
+}
+
+/* Education Section */
+.education {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.education h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.edu-details p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.edu-description {
+  margin: 2rem 0;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.edu-description p {
+  margin-bottom: 1.2rem; /* adjust spacing as needed */
+}
+
+
+/* Projects Section */
+.education h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.education hr {
+  margin-bottom: 2rem;
+  border: none;
+  border-top: 2px solid #ddd;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.proj-label {
+  font-weight: bold;
+}
+.project-card h3 {
+  font-weight: normal; /* reset default bold */
+}
+
+
+.report-btn {
+  align-self: flex-start;
+  padding: 0.6rem 1rem;
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: background 0.3s;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.15);
+}
+
+.report-btn:hover {
+  background: #444;
+}
