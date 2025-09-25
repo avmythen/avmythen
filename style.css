@@ -1,56 +1,57 @@
 /* Reset some default styles */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Header styling */
-header {
-  background: #222;
-  color: #fff;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between; /* push title left, nav right */
-  align-items: center;
-}
-
-.site-title {
-    font-size: 1.5rem;
-    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header styling */
+  header {
+    background: #222;
     color: #fff;
-}
-
-nav {
-  display: flex;
-  gap: 1rem;
-}
-
-nav a {
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  color: #fff;
-  transition: background 0.3s;
-}
-
-nav a:hover {
-  background-color: #666;
-}
-
-nav a.active {
-  background: #555;
-}
-
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between; /* push title left, nav right */
+    align-items: center;
+  }
+  
+  .site-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+  }
+  
+  nav {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: #fff;
+    transition: background 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: #666;
+  }
+  
+  
+  nav a.active {
+    background: #555;
+  }
+  
 /* LinkedIn button */
 nav a.linkedin-btn {
     display: flex;
@@ -68,197 +69,198 @@ nav a.linkedin-btn {
   nav a.linkedin-btn:hover img {
     opacity: 0.7;
   }
+  
 
-/* Main content */
-main {
-  flex: 1;
-  display: block; /* reset from flex */
-  padding: 0;
-}
-
-
-/* Intro section stays centered */
-.intro-band {
-  display: flex;
-  align-items: center;
-  gap: 10rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 3rem; /* push space before image rows */
-}
-
-/* White band only behind intro section */
-/* White band behind intro section */
-.intro-wrapper {
-  background-color: #fff;    /* white background */
-  width: 100%;               /* full screen width */
-  padding: 6rem 2rem;        /* space inside band */
-  margin-top: 0;             /* touches the header */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* optional subtle depth */
-}
-
-
-/* Text block centered internally */
-.intro-text {
-  flex: 1;
-  max-width: 800px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* centers text + button */
-  text-align: center;
-}
-
-.intro-text h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.intro-text p {
-  margin-bottom: 1.5rem;
-  font-size: 1.2rem;
-  max-width: 450px;
-}
-
-/* MY PROJECTS button */
-.projects-btn {
-  display: inline-block;
-  padding: 0.8rem 2rem;
-  background-color: #222;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.3s;
-}
-
-.projects-btn:hover {
-  background-color: #444;
-}
-
-/* Image styling */
-.image-holder img {
-  width: 65%;
-  max-width: 450px;
-  height: auto;
-  border-radius: 1px;
-}
-
-/* Updated image rows for spacing, smaller images, and captions */
-.skills-visuals {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem; /* vertical space between the two rows */
-  margin-top: 5rem; /* move the whole skills section down the page */
-  padding-bottom: 3rem;
-}
-
-/* Updated image rows for spacing and captions */
-.image-row {
-  display: flex;
-  justify-content: center;
-  gap: 300px; /* increased spacing between images */
-  flex-wrap: nowrap;
-  margin-bottom: 2rem;
-}
-
-.image-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.image-card img {
-  max-width: 100px;
-  width: 100%;
-  height: auto;
-  margin-bottom: 0.5rem; /* space between image and caption */
-}
-
-.image-card p {
-  font-size: 1.2rem;   /* match intro-text p */
-  font-weight: normal; /* remove bold, match paragraph style */
-  color: #333;         /* same body text color */
-  margin: 0;
-  text-align: center;
-}
-
-
-/* Responsive */
-@media (max-width: 768px) {
+  /* Main content */
+  main {
+    flex: 1;
+    display: block; /* reset from flex */
+    padding: 0;
+  }
+  
+  
+  /* Intro section stays centered */
   .intro-band {
-    flex-direction: column;
-    text-align: center;
-    gap: 2rem;
-  }
-
-  .intro-text {
+    display: flex;
     align-items: center;
+    gap: 10rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem; /* push space before image rows */
   }
-
+  
+  /* White band only behind intro section */
+  /* White band behind intro section */
+  .intro-wrapper {
+    background-color: #fff;    /* white background */
+    width: 100%;               /* full screen width */
+    padding: 6rem 2rem;        /* space inside band */
+    margin-top: 0;             /* touches the header */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* optional subtle depth */
+  }
+  
+  
+  /* Text block centered internally */
+  .intro-text {
+    flex: 1;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers text + button */
+    text-align: center;
+  }
+  
+  .intro-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .intro-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    max-width: 450px;
+  }
+  
+  /* MY PROJECTS button */
+  .projects-btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #222;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .projects-btn:hover {
+    background-color: #444;
+  }
+  
+  /* Image styling */
   .image-holder img {
-    width: 60%;
-    margin-top: 1rem;
+    width: 65%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 1px;
   }
-
+  
+  /* Updated image rows for spacing, smaller images, and captions */
+  .skills-visuals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem; /* vertical space between the two rows */
+    margin-top: 5rem; /* move the whole skills section down the page */
+    padding-bottom: 3rem;
+  }
+  
+  /* Updated image rows for spacing and captions */
   .image-row {
-    gap: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 300px; /* increased spacing between images */
+    flex-wrap: nowrap;
+    margin-bottom: 2rem;
   }
-
-  .image-row img {
-    max-width: 150px;
+  
+  .image-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-}
-
-.image-wrapper {
-  position: relative;
-  display: inline-block;
-  text-align: center;
-}
-
-.image-wrapper img {
-  display: block;
-  max-width: 120px;
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 0.5rem;
-}
-
-.image-wrapper .image-title {
-  font-size: 1.2rem;
-  font-weight: normal;
-  color: #333;
-  margin: 0;
-}
-
-/* Hover overlay circle covering image + title */
-.hover-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(61, 60, 60, 0.95);
-  color: #f8f5f5;
-  border-radius: 50%;
-  width: 250px;        /* increase size to fit longer text */
-  height: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-family: inherit;
-  font-weight: normal;
-  padding: 1rem;       /* padding allows text wrapping inside circle */
-  box-sizing: border-box;
-  opacity: 0;           /* hidden by default */
-  transition: opacity 0.3s, transform 0.3s;
-  pointer-events: none;
-  word-wrap: break-word; /* ensures long text wraps */
-}
-
-/* Show overlay on hover */
-.image-wrapper:hover .hover-text {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1.05); /* slight grow effect */
-}
+  
+  .image-card img {
+    max-width: 100px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem; /* space between image and caption */
+  }
+  
+  .image-card p {
+    font-size: 1.2rem;   /* match intro-text p */
+    font-weight: normal; /* remove bold, match paragraph style */
+    color: #333;         /* same body text color */
+    margin: 0;
+    text-align: center;
+  }
+  
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .intro-band {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+    }
+  
+    .intro-text {
+      align-items: center;
+    }
+  
+    .image-holder img {
+      width: 60%;
+      margin-top: 1rem;
+    }
+  
+    .image-row {
+      gap: 20px;
+    }
+  
+    .image-row img {
+      max-width: 150px;
+    }
+  }
+  
+  .image-wrapper {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .image-wrapper img {
+    display: block;
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .image-wrapper .image-title {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Hover overlay circle covering image + title */
+  .hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(61, 60, 60, 0.95);
+    color: #f8f5f5;
+    border-radius: 50%;
+    width: 250px;        /* increase size to fit longer text */
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: inherit;
+    font-weight: normal;
+    padding: 1rem;       /* padding allows text wrapping inside circle */
+    box-sizing: border-box;
+    opacity: 0;           /* hidden by default */
+    transition: opacity 0.3s, transform 0.3s;
+    pointer-events: none;
+    word-wrap: break-word; /* ensures long text wraps */
+  }
+  
+  /* Show overlay on hover */
+  .image-wrapper:hover .hover-text {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05); /* slight grow effect */
+  }
