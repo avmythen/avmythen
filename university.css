@@ -43,6 +43,10 @@ nav a:hover {
   background: #666;
 }
 
+nav a.active {
+  background: #555;
+}
+
 /* LinkedIn button */
 nav a.linkedin-btn {
   display: flex;
@@ -61,9 +65,6 @@ nav a.linkedin-btn:hover img {
   opacity: 0.7;
 }
 
-nav a.active {
-  background: #555;
-}
 
 /* Education Section */
 .education {
@@ -161,4 +162,5 @@ nav a.active {
 .report-btn:hover {
   background: #444;
 }
+
 
