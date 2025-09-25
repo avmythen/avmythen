@@ -39,7 +39,7 @@ nav a {
   transition: background 0.3s;
 }
 
-nav a:hover:not(.resume) {
+nav a:hover {
   background: #666;
 }
 
@@ -54,6 +54,24 @@ nav a.resume:hover {
 nav a.active {
   background: #555;
 }
+
+/* LinkedIn button */
+nav a.linkedin-btn {
+    display: flex;
+    align-items: center;
+    padding: 0; /* remove padding for clean icon alignment */
+  }
+  
+  nav a.linkedin-btn img {
+    width: 28px;
+    height: 28px;
+    display: block;
+    transition: opacity 0.3s;
+  }
+  
+  nav a.linkedin-btn:hover img {
+    opacity: 0.7;
+  }
 
 /* Work Section */
 .work {
@@ -110,3 +128,4 @@ hr {
   border-top: 1.5px solid #ddd;
   margin: 2rem 0;
 }
+
